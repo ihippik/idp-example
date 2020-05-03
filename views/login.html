@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign in</title>
+</head>
+<style>
+    #login_form {
+        height: 100px;
+        padding: 10px;
+        width: 300px;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border: 1px solid #555;
+    }
+</style>
+<body>
+<form id="login_form" method="post" action="/signIn">
+    <table style="width:100%;">
+        <tr>
+            <td>Login:</td>
+            <td><input name="login"></td>
+        </tr>
+        <tr>
+            <td>Password:</td>
+            <td><input name="password"></td>
+        </tr>
+        <tr>
+            <td style="text-align: center;padding-top: 10px;" colspan="2">
+                <input type="hidden" name="loginChallenge" value="{{.challenge}}"/>
+                <input type="submit" value="sign in"/>
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
