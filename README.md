@@ -1,6 +1,8 @@
 # Identity Provider Example
 Toy Identity Provider fo ORY Hydra.
 
+Example for an article on Medium: https://medium.com/scum-gazeta/golang-oauth2-openid-d69d09cb84db
+
 This example shows how to implement a flow - authorization code via
  OAuth 2.0 and OpenID Connect Provider - ORY Hydra.
  
